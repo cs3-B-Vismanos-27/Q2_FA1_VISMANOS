@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q2-FA1-VISMANOS</title>
+  <style>
+  #link1 {
+      color: black;
+      text-decoration: none;
+	  float: left;
+    }
+
+    #link1:hover {
+      color: red;
+      background-color: lightgray;
+    }
+
+    #link1:active {
+      color: white;
+      background-color: darkred;
+    }
+
+    #link1:focus {
+      color: blue;
+      background-color: lightblue;
+    }
+
+    #link2 {
+      position: absolute;
+			left: 80px;
+			color: black;
+			text-decoration: none;
+    }
+
+    #link2:hover {
+      color: green;
+      background-color: lightyellow;
+    }
+
+    #link2:active {
+      color: white;
+      background-color: darkgreen;
+    }
+
+    #link2:focus {
+      color: purple;
+      background-color: lavender;
+    }
+
+    
+    #div1 {
+			position: absolute;
+			top: 60px;
+			float: left;
+			width: 100px;
+			height: 100px;
+			border: 1px solid black;
+    }
+
+    #div1:target {
+      background-color: lightblue;
+    }
+	
+	#div2 {
+			position: absolute;
+			top: 180px;
+			width: 100px;
+			height: 100px;
+			float: left;
+			border: 1px solid black;
+		}
+	
+    #div2:target {
+      background-color: lightyellow;
+      border: 10px dotted green;
+	 
+    }
+	ul {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+		}
+		
+		li {
+			float: left;
+		}
+  </style>
+</head>
+<body>
+  <ul>
+  <li><a href="#div1" id="link1">Link 1</a><br></li>
+  <li><a href="#div2" id="link2">Link 2</a><br></li>
+  </ul>
+  <br>
+  <div class="div" id="div1">Content for Div 1</div><br>
+  <div class="div" id="div2">Content for Div 2</div>
+</body>
+</html>
